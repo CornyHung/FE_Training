@@ -47,4 +47,7 @@ const b = {name: "Kiet", age: 19} // object (đối tượng)
 console.log(b.age == 19);
 
 
-// 
+// BT: Nghiên cứu lại về biến
+//  + Tìm hiểu về các kiểu dữ liệu
+//  + Các câu điều kiện
+//  => Tất cả phải có ví dụ cụ thể
