@@ -1,0 +1,32 @@
+header {
+    padding: 0;
+    margin: 0;
+}
+header nav ul {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    width: 100%;
+    justify-content: end;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+header nav ul li:hover a {
+    text-decoration: underline;
+}
+header nav {
+    padding: 50px;
+}
+.change_language {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+/* .change_language:hover {
+    border: 1px solid orchid;
+    border-radius: 8px;
+} */
