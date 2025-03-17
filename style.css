@@ -80,11 +80,37 @@ main h2 {
 }
 
 main .content {
-    background: #EDF7FA;
-    max-width: 100%;
-    padding: 50px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 16px;
+  background: #edf7fa;
+  max-width: 100%;
+  padding: 50px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.project span {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.project span p {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+footer {
+  padding: 42px 0;
+}
+
+footer .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+footer .copyright {
+  text-align: center;
 }
