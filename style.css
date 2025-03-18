@@ -24,6 +24,9 @@ header nav ul li:hover a {
   background: none;
   cursor: pointer;
 }
+.change_language img {
+  border-radius: 100%;
+}
 /* .change_language:hover {
     border: 1px solid orchid;
     border-radius: 8px;
