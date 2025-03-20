@@ -16,6 +16,7 @@ const changeLanguage = () => {
   currentImage.src = checkCurrentLang
     ? "./assets/eng_logo.svg"
     : "./assets/vi.png";
+
   if ("undefined" !== typeof history.pushState) {
     history.pushState(
       { page: "index.html" },
@@ -25,4 +26,26 @@ const changeLanguage = () => {
   } else {
     window.location.assign(url);
   }
-};
+
+  // Bấm vào mình đổi ngôn ngữ của phần header
+  // Phân tích: if else nếu đúng đổi thành tiếng việt sai thì đổi ve tiếng anh
+  const homeHeader = document.getElementById('home')
+  const projectHeader = document.getElementById('project')
+  const skillsHeader = document.getElementById('skills')
+  const contactHeader = document.getElementById('contact')
+  if (!checkCurrentLang) {
+    // Tiếng việt
+    homeHeader.innerText = 'Trang chủ'
+    projectHeader.innerText = 'Dự án'
+    skillsHeader.innerText = 'Kỹ năng'
+    contactHeader.innerText = 'Liên hệ'
+  } else {
+    // Tiếng anh
+    homeHeader.innerText = 'Home'
+    projectHeader.innerText = 'Project'
+    skillsHeader.innerText = 'Skills'
+    contactHeader.innerText = 'Contact'
+  }
+  // Làm luôn 
+  
+}
